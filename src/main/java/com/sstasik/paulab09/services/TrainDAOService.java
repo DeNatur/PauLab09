@@ -11,13 +11,13 @@ import javax.transaction.Transactional;
 @Transactional
 public class TrainDAOService {
 
-    @PersistenceContext
-    private EntityManager entityManager;
-
-    public long insert(Train train){
-        //Open transaction
-        entityManager.persist(train);
-        //Close transaction
-        return train.getId();
-    }
+//    @PersistenceContext
+//    private EntityManager entityManager;
+//
+//    public long insert(Train train){
+//        //Open transaction
+//        entityManager.persist(train);
+//        //Close transaction
+//        return train.getId();
+//    }
 }

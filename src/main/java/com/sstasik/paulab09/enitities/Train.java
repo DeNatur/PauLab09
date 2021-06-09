@@ -2,13 +2,17 @@ package com.sstasik.paulab09.enitities;
 
 
 import javax.annotation.processing.Generated;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 @Entity
-public class Train implements Comparable<Train>, Serializable {
+public class Train implements Comparable<Train> {
 
     @Id
     @GeneratedValue
@@ -24,9 +28,7 @@ public class Train implements Comparable<Train>, Serializable {
         this.seats = seats;
     }
 
-    protected Train() {
-
-    }
+    protected Train() { }
 
     public long getId() {
         return id;
