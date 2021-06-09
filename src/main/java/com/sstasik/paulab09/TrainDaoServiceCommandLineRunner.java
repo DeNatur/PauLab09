@@ -25,6 +25,7 @@ public class TrainDaoServiceCommandLineRunner implements CommandLineRunner {
 
     @Autowired
     private TrainStationRepository trainStationRepository;
+
     @Override
     public void run(String... args) throws Exception {
         Train train = new Train("Chopin", 10);

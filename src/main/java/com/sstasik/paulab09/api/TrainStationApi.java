@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
-
+@RestController
 public class TrainStationApi {
     @Autowired
     private TrainStationRepository trainStationRepository;
